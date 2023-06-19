@@ -6,7 +6,7 @@ body {
 
 button {
     width: 100px;
-    margin: 40px;
+    margin: 20px;
     height: 30px;
     cursor: pointer;
 }
@@ -18,7 +18,7 @@ h1 {
 #food-input-box {
     /* background-color: aqua; */
     margin-left: 30%;
-    margin-top: 3%;
+    margin-top: 5%;
     font-size: larger;
 }
 
@@ -27,8 +27,17 @@ h1 {
 #client-info {
     /* background-color: aqua; */
     margin-left: 30%;
-    margin-top: 8%;
+    margin-top: 5%;
     font-size: larger;
+}
+
+
+#submit-button {
+    margin-top: 5%;
+    margin-left: 40%;
+    border-radius: 20px;
+    width: 10%;
+    height: 50px;
 }
 
 
