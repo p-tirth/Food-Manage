@@ -1,0 +1,35 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aquamarine;
+}
+
+
+button {
+    width: 100px;
+    margin: 40px;
+    height: 30px;
+    cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+}
+
+#food-input-box {
+    /* background-color: aqua; */
+    margin-left: 30%;
+    margin-top: 3%;
+    font-size: larger;
+}
+
+
+
+#client-info {
+    /* background-color: aqua; */
+    margin-left: 30%;
+    margin-top: 8%;
+    font-size: larger;
+}
+
+
+

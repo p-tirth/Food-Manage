@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    
+    <h1> Food Wastage Reduction </h1>
+    
+    
+    <div id="client-info">
+        Please enter your phone number - 
+        <input type="tel" /> <br /> <br />
+
+        Please enter your address - <br /> <br />
+        <textarea name="address" cols="40" rows="5">  </textarea>
+    </div>
+    
+
+
+
+    <div id="food-input-box">
+
+        Please enter the number of people you can feed with - <br /> <br />
+        
+        VEG
+        <button onclick="decrementVeg()"> - </button> 
+        <span id="counter"> 0 </span>
+        <button onclick="incrementVeg()"> + </button>
+        <br />
+        
+        NON-VEG
+        <button onclick="decrementNonVeg()"> - </button> 
+        <span id="lol"> 0 </span>
+        <button onclick="incrementNonVeg()"> + </button>
+        <br />
+        
+        
+        CHAPPATI
+        <button onclick="decrementChappati()"> - </button> 
+        <span id="dem"> 0 </span>
+        <button onclick="incrementChappati()"> + </button>
+        <br />
+        
+        
+        RICE
+        <button onclick="decrementRice()"> - </button> 
+        <span id="broo"> 0 </span>
+        <button onclick="incrementRice()"> + </button>
+        <br />
+        
+    </div>
+
+
+    
+    <script src="clientLogic.js"></script>
+</body>
+</html>
