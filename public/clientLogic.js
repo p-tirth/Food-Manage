@@ -56,6 +56,7 @@ function decrementRice() {
 
 
 function submitData() {
+
   const phoneNumber = document.getElementById("phone").value;
   const address = document.getElementById("address").value;
   const vegCount = parseInt(document.getElementById("counter").innerHTML);
@@ -73,7 +74,19 @@ function submitData() {
   };
 
   const jsonData = JSON.stringify(data);
-  console.log(jsonData);
+  // console.log(jsonData);
   // You will need to send this jsonData to a server-side script to save it into a file
+
+  fetch("/submit-data", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: jsonData,
+  })
+    .then((response) => console.log("Data sent to server"))
+    .catch((error) => console.error("Error:", error));
+    
 }
+
   
