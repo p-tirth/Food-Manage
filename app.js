@@ -17,8 +17,11 @@ app.post("/submit-data", (req, res) => {
   fs.writeFile("data.json", JSON.stringify(data), (err) => {
     if (err) throw err;
     const { PythonShell } = require('python-shell');
-    console.log("shell")
-    PythonShell.run('client.py', null, function (err) {
+    console.log("Python-shell-started")
+    const options ={
+      args :[JSON.stringify(data)]
+    }
+    PythonShell.run('client.py', options, function (err) {
     if (err){throw err}else{console.log('Python script executed successfully.');}
 });
 
