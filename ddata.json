@@ -1,0 +1,12 @@
+{
+  "food": [
+    {
+      "phoneNumber": "345345",
+      "address": "  dfgdfg",
+      "vegCount": 2,
+      "nonVegCount": 3,
+      "chappatiCount": 0,
+      "riceCount": 1
+    }
+  ]
+}

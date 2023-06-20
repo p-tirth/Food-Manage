@@ -14,20 +14,17 @@ app.get('/', (req, res) => {
 
 app.post("/submit-data", (req, res) => {
   const data = req.body;
-  fs.writeFile("data.json", JSON.stringify(data), (err) => {
-    if (err) throw err;
-    const { PythonShell } = require('python-shell');
-    console.log("Python-shell-started")
-    const options ={
-      args :[JSON.stringify(data)]
-    }
-    PythonShell.run('client.py', options, function (err) {
-    if (err){throw err}else{console.log('Python script executed successfully.');}
+  const { PythonShell } = require('python-shell');
+  console.log("Python-shell-started")
+  const options ={
+    args :[JSON.stringify(data)]
+  }
+  PythonShell.run('client.py', options, function (err) {
+  if (err){throw err}else{console.log('Python script executed successfully.');}
 });
 
+res.sendStatus(200);
   });
-  res.sendStatus(200);
-});
 
 app.listen(3000, () => {
   console.log("Server running on port 3000");
